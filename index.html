@@ -248,6 +248,13 @@ new WOW().init();
     <a href="book.html">我要留言</a>
     <a href="contact.html">联系我们</a>
   </div>
+<script type="text/javascript">
+    $('.card').click(function(){
+         var el = $(this).children()[1]; 
+         var label = el.innerText
+         _czc.push(["_trackEvent", '操作', '行业动态', label,1]);
+    });
+</script>
 </div>
 <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1279086578&web_id=1279086578"></script>
 </body>
